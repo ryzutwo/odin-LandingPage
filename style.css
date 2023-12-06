@@ -1,0 +1,255 @@
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+
+}
+
+/* global setting */
+
+.header,
+.body_1,
+.body_2,
+.body_3,
+.body_4,
+.footer{
+    /* align header,footer,bodys to same left
+    and right boundary */
+    padding: 24px 100px;
+    min-width: 1000px; 
+
+    
+}
+
+/* header box setting */
+.header{
+    display: flex;
+    align-items: center;
+    background-color:#1F2937 ;
+    padding-bottom: 80px;
+    justify-content: space-between;    
+    /* flex:1 0 auto; */
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: #F9FAF8;
+    display: flex;
+    flex-shrink: 0;
+}
+ul{
+    display: flex;
+    gap: 16px  ;
+    list-style-type: none;
+    flex-shrink: 0;
+}
+a {
+    color: #e5e7eb;
+    text-decoration: none;
+}
+
+/* body_1 box setting */
+.body_1{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1F2937;    
+    gap: 60px  ;
+    
+}
+.body_1_left{
+    display: flex;
+    flex-direction: column;    
+    align-items: flex-start;
+    gap: 6px;
+}
+.body_1_left_1{
+    font-size: 48px;
+    font-weight: 800;
+    color: #f9faf8;
+    max-width: 350px;
+
+}
+.body_1_left_2{
+    font-size: 18px;
+    color: #f9faf8;
+    width: 450px;   
+}
+
+.button1{
+    background-color: #3882f6;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    display: inline-block;
+    padding: 5px 49px;
+}
+
+.body_1_right{
+    display: flex;
+    justify-content: center;
+    /* padding: 100px; */
+    /* flex-shrink: 0; */
+    background-color: #1f2937;
+
+}
+img{
+    width: 400px;
+    height: auto;
+}
+
+/* body_2 box setting */
+.body_2{
+    background-color: white;
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    /* left move */
+}
+.body_2_top{
+    font-size: 36px;
+    font-weight: 800;
+    color: #1f2937;
+    white-space: nowrap;
+
+}
+.body_2_bot{
+    display: flex;
+    gap: 40px;
+
+}
+
+.body_2_bot_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 150px;
+}
+.box{
+    width: 140px;
+    height: 140px;
+    border-radius: 14px;
+    border: 3px solid #3882f6;
+}
+.box_text{
+    text-align: center;
+}
+
+/* body_3 box setting */
+.body_3{
+    background-color: #e5e7eb;
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /* gap: 16px; */
+    /* shit way to solve xdd but messes up background*/
+    /* align-self: center;
+    width: 720px; */
+
+}
+.body_3_top{
+    display: flex;
+    /* box-sizing: border-box; */
+    padding: 20px 32px;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1f2937;
+    width: 720px;
+    
+}
+.body_3_bot{
+    display: flex;
+    justify-content: right;
+    width: 720px;
+    min-width: 120px;
+    flex-shrink: 0  ;
+    /* no wrap text */
+    white-space: nowrap;
+    /* how to align this to body_3_top's right edge? */
+
+}
+/* body_4 box setting */
+.body_4{
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+}
+
+
+.body_4_box{
+    display: flex;
+    background-color: #3882f6;
+    padding: 24px 36px;
+    border-radius: 6px;
+    justify-content: space-between;
+    min-width: 720px;
+
+}
+.button2{
+    border-radius: 8px;
+    background-color: #3882f6;
+    border: 2px solid white;
+    color: white;
+    padding: 0px 25px;
+    font-size: 16px;
+    font-weight: 500;    
+}
+.body_4_box_left_bigText{
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+}
+.body_4_box_left_smallText{
+    color: rgba(252, 252, 252, 0.727);
+}
+
+/* footer box */
+.footer{
+    color: white;
+    font-size: 16px;
+    background-color: #1f2937;
+    padding: 40px;
+    text-align: center;
+    /* margin-top: auto; */
+}
+
+/* body test no prev global body setting */
+.body_test{
+    padding: 24px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 200px;
+ 
+       
+    
+}
+.body_test_frame_2{
+    background-color: #3882f6;
+    border-radius: 6px;
+    padding: 24px 36px;
+    align-self: center;
+}
+
+.body_test_frame{
+    display: flex;
+    background-color: #3882f6;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 36px;
+    /* width: 1000px; */
+    /* height: 300px; */
+
+}
